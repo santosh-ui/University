@@ -1,17 +1,34 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package univ;
 
 /**
  *
- * @author sp21acg
+ * @author Santosh
  */
-public class Lecturer {
+public class Lecturer extends Person {
+//    private int idNumber;
+//    private String name;
     private String department;
     private double salary;
+    
+    public Lecturer (int id, String n, String dep, double s) {
+//        idNumber = id;
+//        name = n;
+        super(id, n);
+        department = dep;
+        salary = s;
+    }
+    
+//    public int getIdNo() {
+//        return idNumber;
+//    }
+//    
+//    public String getName(){
+//        return name;
+//    }
     
     public String getDepartment() {
         return department;
@@ -19,5 +36,9 @@ public class Lecturer {
     
     public double getSalary() {
         return salary;
+    }
+    
+    public String toString() {
+        return (idNumber + " " + name  + " " + department + " £" + salary);
     }
 }

@@ -1,45 +1,33 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package univ;
 
 /**
  *
- * @author sp21acg
+ * @author Santosh
  */
 public class Person {
-    
     public int idNumber;
     public String name;
     
-    public Person(int id, String name)
-    {
-        this.idNumber = id;
-        this.name = name;
+    public Person(int id, String n){
+        idNumber = id;
+        name = n;
     }
     
-    public String toString()
+    public int getIdNo ()                           
     {
-        return (this.idNumber + " " + this.name);
-    }
+        return idNumber;                           
+    } 
     
-      /**
-    * returns student name as a String
-    * @return value returned is student name as a String
-    */ 
     public String getName ()
     {
         return name;                                
     }
     
-    /**
-    * returns student id as an int
-    * @return value returned is student id as an int
-    */                                                       
-    public int getIdNo ()                           
-    {
-        return idNumber;                           
-    }   
+    public String toString(){
+        return (idNumber + " " + name);
+    }
 }

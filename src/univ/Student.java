@@ -7,11 +7,11 @@ package univ;
  * 
  */
 
-public class Student  extends Person                             
+public class Student extends Person                                
 {
     // fields
 //    private int idNumber;                           
-  
+//    private String name; 
     private String pathway;
     private boolean international;
  
@@ -22,16 +22,30 @@ public class Student  extends Person
     * @param n is the String representation of the student's name
     * @param pway is the pathway given as a String
     */ 
-    public Student (int id, String name, String pway)    
+    public Student (int id, String n, String pway)     
     {
-        super(id, name);
-        pathway = pway;
-        international = false;                            
+        super(id, n);
+        pathway = pway; 
+        international = false;                                 
     }
     
-    
+    /**
+    * returns student id as an int
+    * @return value returned is student id as an int
+    */                                                       
+//    public int getIdNo ()                           
+//    {
+//        return idNumber;                           
+//    }   
 
-  
+    /**
+    * returns student name as a String
+    * @return value returned is student name as a String
+    */ 
+//    public String getName ()
+//    {
+//        return name;                                
+//    }
      
     /**
     * @return returns true if the students is an international student, else false
@@ -67,7 +81,7 @@ public class Student  extends Person
         {
             s = "  Home  student ";
         }
-        return (idNumber + "  " + super.toString()+ "  " + pathway + "  " + s );
+        return (idNumber + "  " + name + "  " +pathway + "  " + s ); //  
     } 
 }
     

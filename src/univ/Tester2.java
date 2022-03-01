@@ -14,9 +14,9 @@ public class Tester2 {
         Student s1 = new Student(20074376, "Sai Santosh Raju Prathigadapa", "Advanced Computer Science");
         s1.setInternational();
         Lecturer l1 = new Lecturer(501, "Hui Cheng", "Computer Science", 1000);
-        System.out.println(p1.toString());
-        System.out.println(s1.toString());
-        System.out.println(l1.toString());
+        System.out.println(p1.getName());
+        System.out.println(s1.getName());
+        System.out.println(l1.getName());
 
     }
 }
